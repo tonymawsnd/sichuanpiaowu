@@ -6,6 +6,8 @@
         <link rel="stylesheet" href="css/semantic.min.css"/>
         <script src="js/jquery-3.4.1.min.js"></script>
         <script src="js/semantic.min.js"></script>
+        <link href="https://cdn.bootcss.com/twitter-bootstrap/3.3.4/css/bootstrap.min.css"
+              rel="stylesheet">
     </head>
     <body>
         <div class="ui container" style="padding-top: 50px;">
@@ -68,5 +70,70 @@
                 </div>
             </div>
         </div>
+
+
+
+        <div class="container">
+            <h2>订单详情</h2>
+            <hr/>
+            <table class="table">
+                <thead>
+                <tr>
+                    <td>订单编号</td>
+                    <td>用户名字</td>
+                    <td>车次</td>
+                    <td>类型</td>
+                    <td>发站</td>
+                    <td>到站</td>
+                    <td>发时</td>
+                    <td>价格</td>
+                    <td>备注</td>
+
+
+                </tr>
+                </thead>
+                <tbody id="chepiao">
+
+                </tbody>
+
+
+            </table>
+
+        </div>
+    </body>
+    <script>
+        $("button").click(function () {
+            var origin = $("#origin").val();
+            var destination = $("#destination").val();
+            var dates = $("#dates").val();
+
+            var myjson = {userid:"aaa111@163.com",seckey:"970fcf26a3f513a1c4e5a6e6c63e8c65",startStation: origin, arriveStation: destination, date: dates};
+
+            $(function () {
+                $.ajax({
+                    url: "/cp3",
+                    type: "POST",
+                    async: true,
+                    cache: false,
+                    datatype: "json",
+                    contentType: "application/json;charset=UTF-8",
+                    data: JSON.stringify(myjson),
+                    success: function (data) {
+                        $("#chepiao").empty();
+                        var s = data.data;
+                        for (i in s) {
+                            $("#chepiao").append("<tr><td>" + s[i].trainCode + "</td><td>" + s[i].trainGrade + "</td><td>" + s[i].startStation + "</td><td>" + s[i].arriveStation + "</td><td>"
+                                + s[i]['startTime'] + "</td><td>" + s[i]['endTime'] + "</td><td>" + s[i].takeTime + "</td><td>" + s[i]['hard-seat-prc'] + "</td><td>"
+                                + s[i]['hard-seat'] + "</td></tr>");
+                        }
+                    },
+                    error: function (data) {
+                        alert("出错" + data);
+                    }
+                });
+            });
+        })
+    </script>
+    <script src="https://cdn.bootcss.com/twitter-bootstrap/3.3.4/js/bootstrap.min.js"></script>
     </body>
 </html>
