@@ -7,52 +7,89 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8c578403-0dcd-41c3-9eee-f47239148f51" name="Default Changelist" comment="已实现登录功能，注册功能，其他的尚未实现">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/ZhiFu.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/cn/scpw/controller/ChePiaoController.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/target/classes/cn/scpw/controller/DingDanController.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/target/classes/cn/scpw/controller/LoginController.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/target/classes/cn/scpw/controller/RegController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/cn/scpw/controller/ZhiFuController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/cn/scpw/pojo/Checi.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/cn/scpw/pojo/CheciMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/cn/scpw/pojo/Dingdan.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/cn/scpw/pojo/DingdanMapper.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/target/classes/cn/scpw/pojo/User.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/target/classes/cn/scpw/pojo/UserMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/cn/scpw/service/ChepiaoService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/cn/scpw/service/DingDanService.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/target/classes/cn/scpw/service/LoginService.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/target/classes/cn/scpw/service/RegService.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/target/classes/cn/scpw/service/UserService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/cn/scpw/service/ZhiFuService.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/target/classes/cn/scpw/util/AliPayFiled.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/target/classes/cn/scpw/util/AliPayUtil.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/target/classes/cn/scpw/util/ControllerAdvice.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/cn/scpw/util/MyHttpClient.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mapper/CheciMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mapper/DingdanMapper.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/target/classes/mapper/UserMapper.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/target/classes/mybatis/mybatis-generator-config.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/target/classes/mybatis/mybatis.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/rebel.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/target/classes/spring/spring_database.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/target/classes/spring/spring_mvc.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/target/ssm.war" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/target/ssm/META-INF/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/cn/scpw/controller/ChePiaoController.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/cn/scpw/controller/DingDanController.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/cn/scpw/controller/LoginController.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/cn/scpw/controller/RegController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/cn/scpw/controller/ZhiFuController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/cn/scpw/pojo/Checi.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/cn/scpw/pojo/CheciMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/cn/scpw/pojo/Dingdan.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/cn/scpw/pojo/DingdanMapper.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/cn/scpw/pojo/User.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/cn/scpw/pojo/UserMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/cn/scpw/service/ChepiaoService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/cn/scpw/service/DingDanService.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/cn/scpw/service/LoginService.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/cn/scpw/service/RegService.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/cn/scpw/service/UserService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/cn/scpw/service/ZhiFuService.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/cn/scpw/util/AliPayFiled.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/cn/scpw/util/AliPayUtil.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/cn/scpw/util/ControllerAdvice.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/cn/scpw/util/MyHttpClient.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/mapper/CheciMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/mapper/DingdanMapper.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/mapper/UserMapper.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/mybatis/mybatis-generator-config.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/mybatis/mybatis.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/rebel.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/spring/spring_database.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/spring/spring_mvc.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/target/ssm/WEB-INF/lib/alipay-sdk-java-3.4.49.ALL.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/WEB-INF/lib/apiguardian-api-1.1.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/WEB-INF/lib/commons-codec-1.9.jar" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/target/ssm/WEB-INF/lib/commons-logging-1.2.jar" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/target/ssm/WEB-INF/lib/druid-1.1.9.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/WEB-INF/lib/httpclient-4.5.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/WEB-INF/lib/httpcore-4.4.4.jar" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/target/ssm/WEB-INF/lib/jackson-annotations-2.9.5.jar" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/target/ssm/WEB-INF/lib/jackson-core-2.9.5.jar" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/target/ssm/WEB-INF/lib/jackson-databind-2.9.5.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/WEB-INF/lib/jcommander-1.72.jar" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/target/ssm/WEB-INF/lib/json-20180130.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/WEB-INF/lib/junit-jupiter-5.5.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/WEB-INF/lib/junit-jupiter-api-5.5.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/WEB-INF/lib/junit-jupiter-engine-5.5.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/WEB-INF/lib/junit-jupiter-params-5.5.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/WEB-INF/lib/junit-platform-commons-1.5.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/WEB-INF/lib/junit-platform-engine-1.5.1.jar" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/target/ssm/WEB-INF/lib/mybatis-3.4.6.jar" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/target/ssm/WEB-INF/lib/mybatis-generator-core-1.3.6.jar" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/target/ssm/WEB-INF/lib/mybatis-spring-1.3.2.jar" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/target/ssm/WEB-INF/lib/mysql-connector-java-5.1.6.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/WEB-INF/lib/opentest4j-1.2.0.jar" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/target/ssm/WEB-INF/lib/spring-aop-4.3.8.RELEASE.jar" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/target/ssm/WEB-INF/lib/spring-beans-4.3.8.RELEASE.jar" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/target/ssm/WEB-INF/lib/spring-context-4.3.8.RELEASE.jar" afterDir="false" />
@@ -63,7 +100,9 @@
       <change afterPath="$PROJECT_DIR$/target/ssm/WEB-INF/lib/spring-tx-4.3.8.RELEASE.jar" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/target/ssm/WEB-INF/lib/spring-web-4.3.8.RELEASE.jar" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/target/ssm/WEB-INF/lib/spring-webmvc-4.3.8.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/WEB-INF/lib/testng-7.0.0.jar" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/target/ssm/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/ZhiFu.html" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/target/ssm/components/accordion.css" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/target/ssm/components/accordion.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/target/ssm/components/accordion.min.css" afterDir="false" />
@@ -210,6 +249,8 @@
       <change afterPath="$PROJECT_DIR$/target/ssm/css/semantic.min.css" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/target/ssm/css/style.css" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/target/ssm/css/zhuce.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/dingdaninfo.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/huochepiao.html" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/target/ssm/images/bg.png" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/target/ssm/images/daohang.png" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/target/ssm/images/del.png" afterDir="false" />
@@ -218,14 +259,18 @@
       <change afterPath="$PROJECT_DIR$/target/ssm/images/timg.png" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/target/ssm/images/tr.png" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/target/ssm/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/js/dingdan.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/target/ssm/js/home.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/js/huochepiao.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/target/ssm/js/jquery-3.4.1.min.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/target/ssm/js/jquery.min.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/target/ssm/js/jquery_3.1.1.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/target/ssm/js/login.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/target/ssm/js/semantic.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/js/yuding.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/target/ssm/js/zhuce.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/target/ssm/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/test.html" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/target/ssm/themes/default/assets/fonts/brand-icons.eot" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/target/ssm/themes/default/assets/fonts/brand-icons.svg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/target/ssm/themes/default/assets/fonts/brand-icons.ttf" afterDir="false" />
@@ -244,11 +289,9 @@
       <change afterPath="$PROJECT_DIR$/target/ssm/themes/default/assets/fonts/outline-icons.woff2" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/target/ssm/themes/default/assets/images/flags.png" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/target/ssm/userinfo.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/yuding.html" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/target/ssm/zhuce.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/scpw/controller/ZhiFuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/scpw/controller/ZhiFuController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/cn/scpw/service/ZhiFuService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/scpw/service/ZhiFuService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/DingdanMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/DingdanMapper.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -299,8 +342,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/cn/scpw/controller/ZhiFuController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="203">
-              <caret line="27" column="17" lean-forward="true" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
+            <state relative-caret-position="145">
+              <caret line="24" column="23" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#937#938#0" expanded="true" />
@@ -313,11 +356,20 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/cn/scpw/service/ZhiFuService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="125">
-              <caret line="59" lean-forward="true" selection-start-line="59" selection-end-line="59" />
+            <state relative-caret-position="934">
+              <caret line="58" selection-start-line="58" selection-end-line="58" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/cn/scpw/pojo/User.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-141">
+              <caret line="7" selection-start-line="7" selection-end-line="7" />
             </state>
           </provider>
         </entry>
@@ -463,42 +515,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="scpw" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sichuanpiaowu" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sichuanpiaowu" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="scpw" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sichuanpiaowu" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sichuanpiaowu" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="scpw" type="462c0819:PsiDirectoryNode" />
-              <item name="pojo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sichuanpiaowu" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sichuanpiaowu" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="scpw" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sichuanpiaowu" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sichuanpiaowu" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="scpw" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="sichuanpiaowu" type="b2602c69:ProjectViewProjectNode" />
@@ -778,7 +794,7 @@
       <workItem from="1566952834252" duration="1950000" />
       <workItem from="1566955405547" duration="11843000" />
       <workItem from="1566973279766" duration="6630000" />
-      <workItem from="1566980402957" duration="5481000" />
+      <workItem from="1566980402957" duration="5869000" />
     </task>
     <task id="LOCAL-00001" summary="这个是一个登陆实现了,但是其他的还未实现">
       <created>1566890686848</created>
@@ -815,11 +831,18 @@
       <option name="project" value="LOCAL" />
       <updated>1566979910363</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="已实现登录功能，注册功能，其他的尚未实现">
+      <created>1566987348818</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1566987348818</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44621000" />
+    <option name="totallyTimeSpent" value="45009000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -1201,6 +1224,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/scpw/pojo/UserMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="11" column="18" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/DingdanMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="250">
@@ -1208,10 +1238,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/scpw/pojo/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-141">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/cn/scpw/controller/ZhiFuController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="27" column="17" lean-forward="true" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
+        <state relative-caret-position="145">
+          <caret line="24" column="23" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#937#938#0" expanded="true" />
@@ -1220,24 +1257,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/scpw/pojo/UserMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="11" column="18" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/scpw/pojo/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/cn/scpw/service/ZhiFuService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="59" lean-forward="true" selection-start-line="59" selection-end-line="59" />
+        <state relative-caret-position="934">
+          <caret line="58" selection-start-line="58" selection-end-line="58" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
