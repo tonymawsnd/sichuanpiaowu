@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
  * @Date 2019/8/22 20:06
  */
 
+@org.springframework.web.bind.annotation.ControllerAdvice
 public class ControllerAdvice {
 
     @ExceptionHandler(Throwable.class)

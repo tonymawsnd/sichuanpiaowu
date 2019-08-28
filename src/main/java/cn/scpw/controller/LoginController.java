@@ -20,7 +20,11 @@ public class LoginController {
     @Autowired
     LoginService loginService;
 
-
+    /**
+     * 登陆的controller
+     * @param user  前端的json封装成user
+     * @return  返回json信息
+     */
     @RequestMapping(value = "/islogin", method = RequestMethod.POST, produces = {"application/json;charset=UTF-8"})
     @ResponseBody
     public Map isLogin(@RequestBody(required = false) User user){

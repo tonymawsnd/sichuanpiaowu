@@ -18,13 +18,17 @@ public class LoginService {
     @Autowired
     UserMapper userMapper;
 
-
-
     Map<String, String> map;
 
+    /**
+     * 查询是否存在账号和密码
+     * @param user  user对象
+     * @return  返回是否成功的Json
+     */
     @Transactional(rollbackFor = Exception.class)
     public Map<String, String> isLogin(User user){
         map = new HashMap<>();
+        //验证数据库是否存在
         if (userMapper.selectByUsernameAndPassword(user) != null){
 
             map.put("code", "200");
