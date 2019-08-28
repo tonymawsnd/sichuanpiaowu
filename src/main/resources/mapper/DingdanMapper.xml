@@ -44,4 +44,6 @@
         c.checi,c.daoshi,c.daozhan,c.fashi,c.fazhan,c.jiage,c.leixing
         from dingdan d join checi c  on  d.checiId = c.id where  d.zhifuzhuangtai = #{param2}  and d.userId=#{param1}
     </select>
+
+
 </mapper>
