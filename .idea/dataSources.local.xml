@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="dataSourceStorageLocal">
+<<<<<<< HEAD
     <data-source name="scpw@106.12.108.84" uuid="99e6740d-3f69-4cfa-8c9d-1c0314fd137c">
+=======
+    <data-source name="scpw@106.12.108.84" uuid="f7404d6a-13b4-432b-a957-3027a5a3db3c">
+>>>>>>> origin/master
       <database-info product="MySQL" version="5.7.17-baidu-rds-3.0.0.1-log" jdbc-version="4.2" driver-name="MySQL Connector/J" driver-version="mysql-connector-java-8.0.15 (Revision: 79a4336f140499bd22dd07f02b708e163844e3d5)" dbms="MYSQL" exact-version="5.7.17" exact-driver-version="8.0">
         <extra-name-characters>#@</extra-name-characters>
         <identifier-quote-string>`</identifier-quote-string>
