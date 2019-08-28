@@ -1,6 +1,7 @@
 package cn.scpw.pojo;
 
 import org.apache.ibatis.annotations.Mapper;
+import org.junit.platform.commons.function.Try;
 
 import java.util.List;
 
@@ -11,7 +12,6 @@ import java.util.List;
  * Date:  2019/8/28
  * Description: 订单数据持久层
  */
-@Mapper
 public interface DingdanMapper {
 
     /**
@@ -20,5 +20,15 @@ public interface DingdanMapper {
      * @return 用户订单对象集合
      */
     List<Dingdan> selectAllMyDingDanByUserId(String userId);
+
+    /**
+     * 使用车次类别对用户所有订单进行查询，例如动车，用户会查询到自己所有的动车订单
+     * @param leixing 车次类型，比如动车
+     * @param userId 用户ID
+     * @return 用户订单对象集合
+     */
+    List<Dingdan> selectAllMyDingDanByCheCiLeiXing(String leixing, String userId);
+
+
 
 }

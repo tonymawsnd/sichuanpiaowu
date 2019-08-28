@@ -18,6 +18,7 @@
             <result property="fashi" column="fashi"/>
             <result property="fazhan" column="fazhan"/>
             <result property="jiage" column="jiage"/>
+            <result property="leixing" column="leixing"/>
         </association>
 
     </resultMap>
@@ -28,7 +29,13 @@
     <!--  用户通过自己的用户ID去数据库中进行订单查询，查询自己所有的订单和车次信息  -->
     <select id="selectAllMyDingDanByUserId" resultMap="BaseResultMap">
         select d.id,d.name,d.shenfenzheng,d.userphone,d.checiId,d.userId,d.beizhu,
-        c.checi,c.daoshi,c.daozhan,c.fashi,c.fazhan,c.jiage
+        c.checi,c.daoshi,c.daozhan,c.fashi,c.fazhan,c.jiage,c.leixing
         from dingdan d join checi c  on  d.checiId = c.id where d.userId=#{userId}
+    </select>
+    <!-- 用户通过车次类型来进行所有订单查询 -->
+    <select id="selectAllMyDingDanByCheCiLeiXing" resultMap="BaseResultMap">
+        select d.id,d.name,d.shenfenzheng,d.userphone,d.checiId,d.userId,d.beizhu,
+        c.checi,c.daoshi,c.daozhan,c.fashi,c.fazhan,c.jiage,c.leixing
+        from dingdan d join checi c  on  d.checiId = c.id where c.leixing=#{param1}  and d.userId=#{param2}
     </select>
 </mapper>

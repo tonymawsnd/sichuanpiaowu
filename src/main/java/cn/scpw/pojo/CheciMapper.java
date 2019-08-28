@@ -9,9 +9,6 @@ import org.apache.ibatis.annotations.Mapper;
  * Date:  2019/8/28
  * Description:
  */
-@Mapper
 public interface CheciMapper {
-
-
 
 }

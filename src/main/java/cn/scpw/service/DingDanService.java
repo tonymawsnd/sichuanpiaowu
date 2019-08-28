@@ -30,4 +30,13 @@ public class DingDanService {
         return dingdanMapper.selectAllMyDingDanByUserId(userId);
     }
 
+    /**
+     * 用户通过车次类型去进行订单查询业务 与自身ID 去查询订单
+     * @param leixing 车次类型
+     * @param userId 用户ID
+     * @return 用户订单对象集合
+     */
+    public List<Dingdan> selectAllMyDingDanByCheCiLeiXing(String leixing,String userId) {
+        return dingdanMapper.selectAllMyDingDanByCheCiLeiXing(leixing,userId);
+    }
 }
