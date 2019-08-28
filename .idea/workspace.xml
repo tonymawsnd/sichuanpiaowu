@@ -7,8 +7,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1c0839da-7ce3-497f-bbeb-750cea6e82ba" name="Default Changelist" comment="查询个人所有订单业务及控制层实现">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dingdaninfo.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/dingdan.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/target/classes/cn/scpw/controller/DingDanController.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/target/classes/cn/scpw/controller/LoginController.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/target/classes/cn/scpw/pojo/Checi.class" afterDir="false" />
@@ -246,7 +244,6 @@
       <change afterPath="$PROJECT_DIR$/target/ssm/js/semantic.min.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/target/ssm/js/zhuce.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/target/ssm/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/ssm/test.html" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/target/ssm/themes/default/assets/fonts/brand-icons.eot" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/target/ssm/themes/default/assets/fonts/brand-icons.svg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/target/ssm/themes/default/assets/fonts/brand-icons.ttf" afterDir="false" />
@@ -266,13 +263,9 @@
       <change afterPath="$PROJECT_DIR$/target/ssm/themes/default/assets/images/flags.png" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/target/ssm/userinfo.html" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/target/ssm/zhuce.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/415cc1b0-e1f7-4e19-bdab-00741f8daa47.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/415cc1b0-e1f7-4e19-bdab-00741f8daa47.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/scpw/controller/DingDanController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/scpw/controller/DingDanController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/scpw/pojo/Dingdan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/scpw/pojo/Dingdan.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/scpw/pojo/DingdanMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/scpw/pojo/DingdanMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/scpw/service/DingDanService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/scpw/service/DingDanService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/DingdanMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/DingdanMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/dingdaninfo.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/dingdaninfo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/test.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/ssm/test.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -639,7 +632,7 @@
       <option name="presentableId" value="Default" />
       <updated>1566966348014</updated>
       <workItem from="1566966353423" duration="293000" />
-      <workItem from="1566966677119" duration="8267000" />
+      <workItem from="1566966677119" duration="10006000" />
     </task>
     <task id="LOCAL-00002" summary="添加订单通过种类去查询">
       <created>1566969824335</created>
@@ -648,7 +641,14 @@
       <option name="project" value="LOCAL" />
       <updated>1566969824336</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="订单模块的完善">
+      <created>1566975104255</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1566975104255</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -670,6 +670,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="查询个人所有订单业务及控制层实现" />
     <MESSAGE value="添加订单通过种类去查询" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加订单通过种类去查询" />
+    <MESSAGE value="订单模块的完善" />
+    <option name="LAST_COMMIT_MESSAGE" value="订单模块的完善" />
   </component>
 </project>
