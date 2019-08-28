@@ -12,6 +12,10 @@
 
   <select id="selectByUsernameAndPassword"  parameterType="cn.scpw.pojo.User" resultMap="BaseResultMap">
     select id,username,password from user where username=#{username} and password=#{password}
-
   </select>
+
+  <update id="updateByUserPassword">
+    update user set password= #{arg0} where id= #{arg1}
+  </update>
+
 </mapper>
