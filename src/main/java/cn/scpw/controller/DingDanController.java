@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import java.util.List;
 import java.util.Map;
+import java.util.UUID;
 
 /**
  * Author: lyh
@@ -59,5 +60,13 @@ public class DingDanController {
     @ResponseBody
     public List<Dingdan> getMyDinDanByPayState(@RequestBody Map<String, String> map) {
         return dingDanService.selectDingDanByUserIdAndPayState(map.get("userid"),map.get("paystate"));
+    }
+
+    @RequestMapping(value = "/yudingchepiao", method = RequestMethod.POST, produces = {"application/json;charset=UTF-8"} )
+    @ResponseBody
+    public void yuDing(@RequestBody Map<String, String> map) {
+        String uuid = UUID.randomUUID().toString().replaceAll("-","");
+        dingDanService.insertCheCi(map, uuid);
+        dingDanService.insertDingDan(map, uuid);
     }
 }

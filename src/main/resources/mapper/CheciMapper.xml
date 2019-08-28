@@ -16,4 +16,9 @@
         <!--@mbg.generated-->
         id, checi, leixing, fazhan, daozhan, fashi, daoshi, jiage
     </sql>
+
+    <insert id="insert">
+        insert into checi(id, checi, leixing, fazhan, daozhan, fashi, daoshi, jiage) values
+        (#{arg0},#{arg1},#{arg2},#{arg3},#{arg4},#{arg5},#{arg6},#{arg7})
+    </insert>
 </mapper>
