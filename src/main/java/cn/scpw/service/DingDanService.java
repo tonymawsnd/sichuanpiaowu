@@ -39,4 +39,23 @@ public class DingDanService {
     public List<Dingdan> selectAllMyDingDanByCheCiLeiXing(String leixing,String userId) {
         return dingdanMapper.selectAllMyDingDanByCheCiLeiXing(leixing,userId);
     }
+
+    /**
+     * 用户查询根据是否支付来查询订单
+     * @param userId 用户ID
+     * @param payState 订单支付状态 0 表示未支付 1 表示支付
+     * @return 用户订单合计
+     */
+    public List<Dingdan> selectDingDanByUserIdAndPayState(String userId, String payState) {
+        return dingdanMapper.selectDingDanByUserIdAndPayState(userId, payState);
+    }
+
+    /**
+     * 通过订单ID去查询订单
+     * @param DingDanId 订单ID
+     * @return 订单对象
+     */
+    public Dingdan selectDinDanByDinDanId(String DingDanId) {
+        return dingdanMapper.selectDinDanByDinDanId(DingDanId);
+    }
 }

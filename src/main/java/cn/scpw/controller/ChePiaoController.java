@@ -28,9 +28,8 @@ public class ChePiaoController {
     @RequestMapping(value = "/cp", method = RequestMethod.POST, produces = {"application/json;charset=UTF-8"})
     @ResponseBody
     public List chePiaoQuery(@RequestBody Map map){
-        List<String> l = chepiaoService.chePiaoQuery(map);
-        System.out.println(l);
-        return l;
+
+        return chepiaoService.chePiaoQuery(map);
     }
 
 }

@@ -1,7 +1,6 @@
 package cn.scpw.pojo;
 
 import java.io.Serializable;
-import java.util.List;
 
 /**
  * Author: lyh
@@ -11,55 +10,42 @@ import java.util.List;
  * Description:
  */
 public class Dingdan implements Serializable {
-
-    @Override
-    public String toString() {
-        return "Dingdan{" +
-                "id='" + id + '\'' +
-                ", name='" + name + '\'' +
-                ", shenfenzheng='" + shenfenzheng + '\'' +
-                ", userphone='" + userphone + '\'' +
-                ", checiid='" + checiid + '\'' +
-                ", userid='" + userid + '\'' +
-                ", beizhu='" + beizhu + '\'' +
-                ", checi=" + checi +
-                '}';
-    }
-
     /**
-    * 订单id
-    */
+     * 订单id
+     */
     private String id;
 
     /**
-    * 用户姓名
-    */
+     * 用户姓名
+     */
     private String name;
 
     /**
-    * 用户身份证
-    */
+     * 用户身份证
+     */
     private String shenfenzheng;
 
     /**
-    * 用户手机
-    */
+     * 用户手机
+     */
     private String userphone;
 
     /**
-    * 用户下单的车次ID
-    */
+     * 用户下单的车次ID
+     */
     private String checiid;
 
     /**
-    * 用户ID
-    */
+     * 用户ID
+     */
     private String userid;
 
     /**
-    * 用户的备注
-    */
+     * 用户的备注
+     */
     private String beizhu;
+
+    private String zhifuzhuangtai;
 
     private Checi checi;
 
@@ -127,5 +113,13 @@ public class Dingdan implements Serializable {
 
     public void setBeizhu(String beizhu) {
         this.beizhu = beizhu;
+    }
+
+    public String getZhifuzhuangtai() {
+        return zhifuzhuangtai;
+    }
+
+    public void setZhifuzhuangtai(String zhifuzhuangtai) {
+        this.zhifuzhuangtai = zhifuzhuangtai;
     }
 }
