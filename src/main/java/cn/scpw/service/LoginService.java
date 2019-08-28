@@ -33,6 +33,7 @@ public class LoginService {
 
             map.put("code", "200");
             map.put("msg", "登陆成功");
+            map.put("userId",userMapper.selectByUsernameAndPassword(user).getId());
             return map;
 
         }else {

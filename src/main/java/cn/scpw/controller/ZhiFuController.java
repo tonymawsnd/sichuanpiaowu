@@ -1,34 +1,33 @@
 package cn.scpw.controller;
 
+import cn.scpw.pojo.Checi;
 import cn.scpw.pojo.User;
 import cn.scpw.service.UserService;
+import cn.scpw.service.ZhiFuService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
+
+import java.util.HashMap;
 import java.util.Map;
 
 /**
- * @Author LJR
- * @Date 2019/8/27 12:13
+ * @Author XHH
+ * @Date 2019/8/28 14.22
+ * 这是票务支付的Controller
  */
 @Controller
-public class LoginController {
-
+public class ZhiFuController {
     @Autowired
-    UserService userService;
+    ZhiFuService zhiFuService;
 
-    /**
-     * 登陆的controller
-     * @param user  前端的json封装成user
-     * @return  返回json信息
-     */
-    @RequestMapping(value = "/islogin", method = RequestMethod.POST, produces = {"application/json;charset=UTF-8"})
+    @RequestMapping(value = "/isZhiFu", method = RequestMethod.POST, produces = {"application/json;charset=UTF-8"})
     @ResponseBody
-    public Map isLogin(@RequestBody(required = false) User user){
-
-        return userService.isLogin(user);
+    public Map isZhiFu(@RequestBody(required = false) Map<String,String> map){
+        return  zhiFuService.isZhiFu(map);
     }
+
 }
