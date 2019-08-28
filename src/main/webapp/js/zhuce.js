@@ -1,11 +1,13 @@
-  
+
+var myjson ="";
+
  $(".submit").click(function(){
    	     var name = $("input[name='name']").val().trim();
    	     var pw = $("input[name='pw']").val().trim();
-		  var pw1 = $("input[name='pw1']").val().trim();
+   	     var pw1 = $("input[name='pw1']").val().trim();
          var phone=/^1[34578]\d{9}$/;/*验证手机号*/
 		 var p=/^.{8,20}$/;/*匹配8-20的除开空格*/
-   
+   		 myjson = {username:name,password:pw};
 
    	   if(name.length<1)
    	   {
@@ -88,10 +90,34 @@ $("#wanc").click(function(){
 				
 				}
 				else{
-					$(".complete").show(200);
-					$(".validate").hide(200);
-					document.getElementById("mob").innerHTML=name;
-					$(".user_z").css("box-shadow","0px 0px 5px 4px #fff");		
+
+				$.ajax({
+					url: "/isReg",   // 请求路径  url-pattern  基于当前工程的绝对路径
+					type: "post",            // 请求的方式，不区分大小写
+					async: true,             // 是否异步，true是默认值，false为同步请求
+					cache: false,            // 关闭缓存，目的是为了避免部分浏览器缓存加载出错(IE)
+					datatype: "json",        // 返回类型，text文本、html页面、json数据
+					contentType: "application/json;charset=utf-8",
+					data: JSON.stringify(myjson),
+					success: function (data) {
+						console.log(data)
+						if(data.code == 200){
+							alert(data.msg);
+							$(".complete").show(200);
+							$(".validate").hide(200);
+							document.getElementById("mob").innerHTML=name;
+							$(".user_z").css("box-shadow","0px 0px 5px 4px #fff");
+							window.location="index.html";<!--js页面跳转-->
+						}else {
+							alert(data.msg);
+						}
+					},
+					error: function (data) {
+						alert(data.msg)
+						console.log("错误:" + JSON.stringify(data));
+					}
+				});
+
 					}
 	
 	});
