@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import java.util.HashMap;
 import java.util.Map;
 
 /**
@@ -25,7 +26,14 @@ public class ZhiFuController {
 
     @RequestMapping(value = "/isZhiFu", method = RequestMethod.POST, produces = {"application/json;charset=UTF-8"})
     @ResponseBody
-    public void isZhiFu(@RequestBody(required = false) Map<String,String> map){
-        return ZhiFuService.isZhiFu(map);
+    public Map isZhiFu(@RequestBody(required = false) Map<String,String> map){
+        return zhiFuService.isZhiFu(map);
+    }
+
+    public static void main(String[] args) {
+        Map<String, String> map = new HashMap<>();
+        map.put("dinDanid","1");
+        ZhiFuController zhiFuController = new ZhiFuController();
+        zhiFuController.isZhiFu(map);
     }
 }

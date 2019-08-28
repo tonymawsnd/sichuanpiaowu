@@ -29,16 +29,16 @@ public class ZhiFuService {
          * @return
          */
         @Transactional(rollbackFor = Exception.class)
-        public String isZhiFu(Map<String,String> map){
+        public Map isZhiFu(Map<String,String> map){
 
             //根据sessionStorage调取买票人的id
             //select查询车票的信息和状态
             //完成支付
 
-            Dingdan dingDan = dingdanMapper.selectAllMyDingDanByUserId(map.get("userid"));
+            Dingdan dingDan = dingdanMapper.selectDinDanByDinDanId(map.get("dinDanid"));
 
             AliPayUtil aliPayUtil = new AliPayUtil();
-            return aliPayUtil.aliPay(
+            String form = aliPayUtil.aliPay(
                     "http://localhost:8080/success.html",
                     AliPayFiled.FAST_INSTANT_TRADE_PAY,
                     dingDan.getId(),
@@ -47,6 +47,12 @@ public class ZhiFuService {
                     "火车票");
 
 
+
+            Map<String, String> returnMap = new HashMap<>();
+            returnMap.put(form,form);
+
+
+            return returnMap;
         }
 
 }
