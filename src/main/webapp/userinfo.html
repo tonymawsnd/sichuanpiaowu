@@ -102,37 +102,7 @@
         </div>
     </body>
     <script>
-        $("button").click(function () {
-            var origin = $("#origin").val();
-            var destination = $("#destination").val();
-            var dates = $("#dates").val();
 
-            var myjson = {userid:"aaa111@163.com",seckey:"970fcf26a3f513a1c4e5a6e6c63e8c65",startStation: origin, arriveStation: destination, date: dates};
-
-            $(function () {
-                $.ajax({
-                    url: "/cp3",
-                    type: "POST",
-                    async: true,
-                    cache: false,
-                    datatype: "json",
-                    contentType: "application/json;charset=UTF-8",
-                    data: JSON.stringify(myjson),
-                    success: function (data) {
-                        $("#chepiao").empty();
-                        var s = data.data;
-                        for (i in s) {
-                            $("#chepiao").append("<tr><td>" + s[i].trainCode + "</td><td>" + s[i].trainGrade + "</td><td>" + s[i].startStation + "</td><td>" + s[i].arriveStation + "</td><td>"
-                                + s[i]['startTime'] + "</td><td>" + s[i]['endTime'] + "</td><td>" + s[i].takeTime + "</td><td>" + s[i]['hard-seat-prc'] + "</td><td>"
-                                + s[i]['hard-seat'] + "</td></tr>");
-                        }
-                    },
-                    error: function (data) {
-                        alert("出错" + data);
-                    }
-                });
-            });
-        })
     </script>
     <script src="https://cdn.bootcss.com/twitter-bootstrap/3.3.4/js/bootstrap.min.js"></script>
     </body>
