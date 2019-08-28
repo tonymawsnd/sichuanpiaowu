@@ -1,7 +1,6 @@
 package cn.scpw.pojo;
 
 import org.apache.ibatis.annotations.Mapper;
-import org.junit.platform.commons.function.Try;
 
 import java.util.List;
 

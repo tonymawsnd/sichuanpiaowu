@@ -14,7 +14,7 @@ import java.util.Map;
  * @Date 2019/8/27 12:17
  */
 @Service
-public class LoginService {
+public class UserService {
     @Autowired
     UserMapper userMapper;
 
@@ -29,8 +29,10 @@ public class LoginService {
     public Map<String, String> isLogin(User user){
         map = new HashMap<>();
         //验证数据库是否存在
+        User user1 = userMapper.selectByUsernameAndPassword(user);
         if (userMapper.selectByUsernameAndPassword(user) != null){
-
+            System.out.println("-----------"+user1);
+            map.put("userId",user1.getId());
             map.put("code", "200");
             map.put("msg", "登陆成功");
             return map;
@@ -44,5 +46,31 @@ public class LoginService {
         }
 
     }
+
+    @Transactional(rollbackFor = Exception.class)
+    public Map<String, String> userInfo(User user){
+        map = new HashMap<>();
+        //验证数据库是否存在
+        User user1 = userMapper.selectByUserId(user);
+        if (user1 != null){
+            System.out.println(user1);
+            map.put("name",user1.getRealname());
+            map.put("sex",user1.getSex());
+            map.put("phone",user1.getUsername());
+            map.put("idCard",user1.getUseridcard());
+            map.put("code", "200");
+            map.put("msg", "查询成功");
+            return map;
+
+        }else {
+
+            map.put("code", "500");
+            map.put("msg", "查询失败");
+            return map;
+
+        }
+
+    }
+
 
 }

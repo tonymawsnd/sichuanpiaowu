@@ -82,6 +82,8 @@ $(document).ready(function(){
 					if(data.code == 200){
 						alert(data.msg);
 						window.location="index.html";<!--js页面跳转-->
+						console.log(data.userId);
+						sessionStorage.setItem("userId",data.userId);
 					}else {
 						alert(data.msg);
 					}
