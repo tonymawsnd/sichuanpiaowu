@@ -84,6 +84,8 @@ $(document).ready(function(){
 						alert(data.msg);
 						sessionStorage.setItem("userId",data.userId);
 						window.location="index.html";<!--js页面跳转-->
+						console.log(data.userId);
+						sessionStorage.setItem("userId",data.userId);
 					}else {
 						alert(data.msg);
 					}

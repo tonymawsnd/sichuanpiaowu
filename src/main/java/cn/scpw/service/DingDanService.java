@@ -23,6 +23,7 @@ public class DingDanService {
 
     /**
      * 用户查询自己所有订单信息业务
+     *
      * @param userId 用户ID
      * @return 用户订单集合信息
      */
@@ -32,11 +33,33 @@ public class DingDanService {
 
     /**
      * 用户通过车次类型去进行订单查询业务 与自身ID 去查询订单
+     *
      * @param leixing 车次类型
-     * @param userId 用户ID
+     * @param userId  用户ID
      * @return 用户订单对象集合
      */
-    public List<Dingdan> selectAllMyDingDanByCheCiLeiXing(String leixing,String userId) {
-        return dingdanMapper.selectAllMyDingDanByCheCiLeiXing(leixing,userId);
+    public List<Dingdan> selectAllMyDingDanByCheCiLeiXing(String leixing, String userId) {
+        return dingdanMapper.selectAllMyDingDanByCheCiLeiXing(leixing, userId);
+    }
+
+    /**
+     * 用户查询根据是否支付来查询订单
+     *
+     * @param userId   用户ID
+     * @param payState 订单支付状态 0 表示未支付 1 表示支付
+     * @return 用户订单合计
+     */
+    public List<Dingdan> selectDingDanByUserIdAndPayState(String userId, String payState) {
+        return dingdanMapper.selectDingDanByUserIdAndPayState(userId, payState);
+    }
+
+    /**
+     * 通过订单ID去查询订单
+     *
+     * @param DingDanId 订单ID
+     * @return 订单对象
+     */
+    public Dingdan selectDinDanByDinDanId(String DingDanId) {
+        return dingdanMapper.selectDinDanByDinDanId(DingDanId);
     }
 }

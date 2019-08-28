@@ -34,9 +34,8 @@ public class DingDanController {
     @RequestMapping(value = "/selectMyAllDinDanByUserId", method = RequestMethod.POST)
     @ResponseBody
     public List<Dingdan> getMyAllDinDanByUserId(@RequestBody Map<String, String> map) {
-//        "f47ce6a3de0c4b52ac7c41a0ff936b39"
         System.out.println(map.get("userId"));
-        return dingDanService.selectAllMyDingDanByUserId(map.get("userId"));
+        return dingDanService.selectAllMyDingDanByUserId(map.get("userid"));
     }
 
 
@@ -48,6 +47,17 @@ public class DingDanController {
     @RequestMapping(value = "/selectMyDinDanByLeiXing", method = RequestMethod.POST)
     @ResponseBody
     public List<Dingdan> getMyDinDanByLeiXing(@RequestBody Map<String,String> map) {
-        return dingDanService.selectAllMyDingDanByCheCiLeiXing(map.get("leixing"),map.get("userId"));
+        return dingDanService.selectAllMyDingDanByCheCiLeiXing(map.get("leixing"),map.get("userid"));
+    }
+
+    /**
+     * 用户根据支付状态来查询自己的所有订单
+     * @param map 前端传入的json数据 userid ——用户id 与 paystate ——支付状态（0表示未支付，1表示支付）
+     * @return 用户订单集合
+     */
+    @RequestMapping(value = "/selectMyDinDanByPayState", method = RequestMethod.POST)
+    @ResponseBody
+    public List<Dingdan> getMyDinDanByPayState(@RequestBody Map<String, String> map) {
+        return dingDanService.selectDingDanByUserIdAndPayState(map.get("userid"),map.get("paystate"));
     }
 }
