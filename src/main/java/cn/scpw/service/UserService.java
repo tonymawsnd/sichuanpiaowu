@@ -76,6 +76,32 @@ public class UserService {
         }
 
     }
+    
+/**
+     * 注册功能，先提取出前段传递的username，并验证数据库中是否存在该username，
+     * 如果存在，就返回500，注册失败，原因为用户名重复，或其他原因
+     * 如果不存在，就给user生成一个id，并将user对象插入到数据库，并返回200，注册成功
+     * @param user  user对象
+     * @return  返回是否成功的Json
+     */
+    @Transactional(rollbackFor = Exception.class)
+    public Map<String, String> isReg(User user){
+        Map<String, String> map = new HashMap<>();
+        //验证数据库是否存在
+        if (userMapper.selectByUsername(user.getUsername()) == null){
+            user.setId(UUID.randomUUID().toString().replace("-",""));
+            userMapper.insertByUser(user);
+            map.put("code", "200");
+            map.put("msg", "注册成功");
+            return map;
+        }else {
+            map.put("code", "500");
+            map.put("msg", "用户名重复，或其他原因，注册失败");
+            return map;
+
+        }
+
+    }
 
 
 }
