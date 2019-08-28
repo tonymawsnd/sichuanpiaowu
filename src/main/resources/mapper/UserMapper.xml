@@ -23,8 +23,20 @@
 
   </select>
 
+<<<<<<< HEAD
   <select id="selectByUserId"  parameterType="cn.scpw.pojo.User" resultMap="BaseResultMap">
     select username,password,jifen,realName,sex,userIdCard from user where id=#{id}
 
   </select>
+=======
+  <select id="selectByUsername"  parameterType="cn.scpw.pojo.User" resultMap="BaseResultMap">
+    select id,username,password from user where username=#{username}
+
+  </select>
+
+  <insert id="insertByUser" parameterType="cn.scpw.pojo.User">
+    insert into user (id,username,password) values (#{id},#{username},#{password})
+  </insert>
+
+>>>>>>> origin/master
 </mapper>

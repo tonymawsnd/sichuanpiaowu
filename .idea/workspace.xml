@@ -1,0 +1,643 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="beaf86b4-6e34-42b4-b720-050a9be04855" name="Default Changelist" comment="用户详情信息上传!!!">
+      <change afterPath="$PROJECT_DIR$/src/main/java/cn/scpw/service/ChepiaoService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cn/scpw/util/MyHttpClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/cn/scpw/controller/ChePiaoController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/cn/scpw/controller/DingDanController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/cn/scpw/controller/LoginController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/cn/scpw/controller/UserInfoController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/cn/scpw/pojo/Checi.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/cn/scpw/pojo/CheciMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/cn/scpw/pojo/Dingdan.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/cn/scpw/pojo/DingdanMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/cn/scpw/pojo/User.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/cn/scpw/pojo/UserMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/cn/scpw/service/ChepiaoService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/cn/scpw/service/DingDanService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/cn/scpw/service/UserService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/cn/scpw/util/AliPayFiled.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/cn/scpw/util/AliPayUtil.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/cn/scpw/util/MyHttpClient.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mapper/CheciMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mapper/DingdanMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mapper/UserMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mybatis/mybatis-generator-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mybatis/mybatis.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/rebel.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/spring/spring_database.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/spring/spring_mvc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm.war" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/META-INF/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/cn/scpw/controller/ChePiaoController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/cn/scpw/controller/DingDanController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/cn/scpw/controller/LoginController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/cn/scpw/controller/UserInfoController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/cn/scpw/pojo/Checi.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/cn/scpw/pojo/CheciMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/cn/scpw/pojo/Dingdan.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/cn/scpw/pojo/DingdanMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/cn/scpw/pojo/User.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/cn/scpw/pojo/UserMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/cn/scpw/service/ChepiaoService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/cn/scpw/service/DingDanService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/cn/scpw/service/UserService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/cn/scpw/util/AliPayFiled.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/cn/scpw/util/AliPayUtil.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/cn/scpw/util/MyHttpClient.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/mapper/CheciMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/mapper/DingdanMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/mapper/UserMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/mybatis/mybatis-generator-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/mybatis/mybatis.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/rebel.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/spring/spring_database.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/spring/spring_mvc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/WEB-INF/lib/alipay-sdk-java-3.4.49.ALL.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/WEB-INF/lib/apiguardian-api-1.1.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/WEB-INF/lib/commons-codec-1.9.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/WEB-INF/lib/commons-logging-1.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/WEB-INF/lib/druid-1.1.9.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/WEB-INF/lib/httpclient-4.5.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/WEB-INF/lib/httpcore-4.4.4.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/WEB-INF/lib/jackson-annotations-2.9.5.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/WEB-INF/lib/jackson-core-2.9.5.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/WEB-INF/lib/jackson-databind-2.9.5.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/WEB-INF/lib/jcommander-1.72.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/WEB-INF/lib/json-20180130.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/WEB-INF/lib/junit-jupiter-5.5.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/WEB-INF/lib/junit-jupiter-api-5.5.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/WEB-INF/lib/junit-jupiter-engine-5.5.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/WEB-INF/lib/junit-jupiter-params-5.5.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/WEB-INF/lib/junit-platform-commons-1.5.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/WEB-INF/lib/junit-platform-engine-1.5.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/WEB-INF/lib/mybatis-3.4.6.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/WEB-INF/lib/mybatis-generator-core-1.3.6.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/WEB-INF/lib/mybatis-spring-1.3.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/WEB-INF/lib/mysql-connector-java-5.1.6.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/WEB-INF/lib/opentest4j-1.2.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/WEB-INF/lib/spring-aop-4.3.8.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/WEB-INF/lib/spring-beans-4.3.8.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/WEB-INF/lib/spring-context-4.3.8.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/WEB-INF/lib/spring-core-4.3.8.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/WEB-INF/lib/spring-expression-4.3.8.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/WEB-INF/lib/spring-jdbc-4.3.8.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/WEB-INF/lib/spring-test-4.3.8.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/WEB-INF/lib/spring-tx-4.3.8.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/WEB-INF/lib/spring-web-4.3.8.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/WEB-INF/lib/spring-webmvc-4.3.8.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/WEB-INF/lib/testng-7.0.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/components/accordion.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/components/accordion.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/components/accordion.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/components/accordion.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/components/ad.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/components/ad.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/components/api.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/components/api.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/components/breadcrumb.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/components/breadcrumb.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/components/button.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/components/button.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/components/card.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/components/card.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/components/checkbox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/components/checkbox.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/components/checkbox.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/components/checkbox.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/components/colorize.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/components/colorize.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/components/comment.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/components/comment.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/components/container.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/components/container.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/components/dimmer.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/components/dimmer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/components/dimmer.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/components/dimmer.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/components/divider.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/components/divider.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/components/dropdown.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/components/dropdown.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/components/dropdown.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/components/dropdown.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/components/embed.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/components/embed.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/components/embed.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/components/embed.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/components/feed.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/components/feed.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/components/flag.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/components/flag.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/components/form.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/components/form.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/components/form.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/components/form.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/components/grid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/components/grid.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/components/header.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/components/header.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/components/icon.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/components/icon.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/components/image.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/components/image.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/components/input.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/components/input.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/components/item.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/components/item.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/components/label.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/components/label.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/components/list.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/components/list.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/components/loader.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/components/loader.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/components/menu.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/components/menu.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/components/message.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/components/message.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/components/modal.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/components/modal.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/components/modal.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/components/modal.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/components/nag.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/components/nag.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/components/nag.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/components/nag.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/components/placeholder.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/components/placeholder.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/components/popup.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/components/popup.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/components/popup.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/components/popup.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/components/progress.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/components/progress.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/components/progress.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/components/progress.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/components/rail.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/components/rail.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/components/rating.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/components/rating.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/components/rating.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/components/rating.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/components/reset.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/components/reset.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/components/reveal.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/components/reveal.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/components/search.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/components/search.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/components/search.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/components/search.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/components/segment.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/components/segment.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/components/shape.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/components/shape.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/components/shape.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/components/shape.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/components/sidebar.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/components/sidebar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/components/sidebar.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/components/sidebar.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/components/site.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/components/site.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/components/site.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/components/site.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/components/state.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/components/state.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/components/statistic.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/components/statistic.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/components/step.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/components/step.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/components/sticky.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/components/sticky.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/components/sticky.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/components/sticky.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/components/tab.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/components/tab.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/components/tab.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/components/tab.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/components/table.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/components/table.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/components/transition.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/components/transition.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/components/transition.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/components/transition.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/components/video.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/components/video.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/components/video.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/components/video.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/components/visibility.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/components/visibility.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/components/visit.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/components/visit.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/css/home.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/css/semantic.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/css/zhuce.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/dingdaninfo.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/huochepiao.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/images/bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/images/daohang.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/images/del.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/images/icon_ptloginpage_ie61e9c5d.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/images/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/images/timg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/images/tr.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/js/dingdan.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/js/home.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/js/huochepiao.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/js/jquery-3.4.1.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/js/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/js/jquery_3.1.1.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/js/login.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/js/semantic.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/js/userinfo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/js/yuding.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/js/zhuce.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/test.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/themes/default/assets/fonts/brand-icons.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/themes/default/assets/fonts/brand-icons.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/themes/default/assets/fonts/brand-icons.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/themes/default/assets/fonts/brand-icons.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/themes/default/assets/fonts/brand-icons.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/themes/default/assets/fonts/icons.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/themes/default/assets/fonts/icons.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/themes/default/assets/fonts/icons.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/themes/default/assets/fonts/icons.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/themes/default/assets/fonts/icons.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/themes/default/assets/fonts/icons.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/themes/default/assets/fonts/outline-icons.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/themes/default/assets/fonts/outline-icons.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/themes/default/assets/fonts/outline-icons.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/themes/default/assets/fonts/outline-icons.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/themes/default/assets/fonts/outline-icons.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/themes/default/assets/images/flags.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/userinfo.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/yuding.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ssm/zhuce.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/scpw/pojo/DingdanMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/scpw/pojo/DingdanMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/scpw/pojo/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/scpw/pojo/UserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/scpw/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/scpw/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/userinfo.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/userinfo.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/cn/scpw/service/UserService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="152">
+              <caret line="55" column="51" lean-forward="true" selection-start-line="55" selection-start-column="51" selection-end-line="55" selection-end-column="51" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/cn/scpw/controller/UserInfoController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="228">
+              <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/js/userinfo.js">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/userinfo.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="51" column="53" lean-forward="true" selection-start-line="51" selection-start-column="53" selection-end-line="51" selection-end-column="53" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/cn/scpw/pojo/User.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="38">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/UserMapper.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="304">
+              <caret line="16" column="36" lean-forward="true" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/cn/scpw/pojo/UserMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="265">
+              <caret line="14" column="31" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.idea/dataSources.local.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="133">
+              <caret line="7" column="21" lean-forward="true" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/js/yuding.js">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/js/zhuce.js">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/java/cn/scpw/pojo/UserMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/scpw/service/UserService.java" />
+      </list>
+    </option>
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="sichuanpiaowu" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sichuanpiaowu" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sichuanpiaowu" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sichuanpiaowu" type="462c0819:PsiDirectoryNode" />
+              <item name=".idea" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sichuanpiaowu" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sichuanpiaowu" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sichuanpiaowu" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sichuanpiaowu" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sichuanpiaowu" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sichuanpiaowu" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sichuanpiaowu" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sichuanpiaowu" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="scpw" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sichuanpiaowu" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sichuanpiaowu" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="scpw" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sichuanpiaowu" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sichuanpiaowu" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="scpw" type="462c0819:PsiDirectoryNode" />
+              <item name="pojo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sichuanpiaowu" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sichuanpiaowu" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="scpw" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sichuanpiaowu" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sichuanpiaowu" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="scpw" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sichuanpiaowu" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sichuanpiaowu" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sichuanpiaowu" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sichuanpiaowu" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="mapper" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="488000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Designer" />
+      <window_info id="Image Layers" />
+      <window_info id="UI Designer" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info id="Capture Tool" />
+      <window_info id="Web" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Application Servers" weight="0.32924962" />
+      <window_info anchor="bottom" id="Spring" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Java Enterprise" />
+      <window_info anchor="bottom" id="Database Changes" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Messages" weight="0.32924962" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32924962" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Maven" />
+      <window_info anchor="right" id="Palette" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="LAST_COMMIT_MESSAGE" value="" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/.idea/dataSources.local.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="21" lean-forward="true" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/scpw/util/MyHttpClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1900">
+          <caret line="100" column="33" selection-start-line="100" selection-start-column="33" selection-end-line="100" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2124#2139#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="156" selection-start-line="156" selection-end-line="156" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/login.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/scpw/pojo/UserMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="265">
+          <caret line="14" column="31" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/scpw/pojo/DingdanMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="18" column="17" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/userinfo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="51" column="53" lean-forward="true" selection-start-line="51" selection-start-column="53" selection-end-line="51" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/scpw/pojo/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/UserMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="16" column="36" lean-forward="true" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/userinfo.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/scpw/controller/UserInfoController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/scpw/service/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="55" column="51" lean-forward="true" selection-start-line="55" selection-start-column="51" selection-end-line="55" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

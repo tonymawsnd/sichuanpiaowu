@@ -11,6 +11,9 @@ public interface UserMapper {
     //注册----根据User向数据库插入数据
     void insertByUser(User user);
 
+<<<<<<< HEAD
     //通过id显示用户信息
     User userInfoSelectByUserId(User user);
+=======
+>>>>>>> origin/master
 }

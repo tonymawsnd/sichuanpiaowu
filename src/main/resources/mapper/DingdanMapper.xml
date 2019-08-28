@@ -46,7 +46,7 @@
     </select>
 
     <select id="selectDinDanByDinDanId" resultMap="BaseResultMap">
-        select id, name, shenfenzheng, userphone, checiId, userId, beizhu, zhifuzhuangtai from dingdan where id+#{DingDanId}
+        select id, name, shenfenzheng, userphone, checiId, userId, beizhu, zhifuzhuangtai from dingdan where id=#{DingDanId}
     </select>
 
 
