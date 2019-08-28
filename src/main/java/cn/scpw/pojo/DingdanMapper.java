@@ -1,12 +1,12 @@
 package cn.scpw.pojo;
 
-<<<<<<< HEAD
+
 import org.apache.ibatis.annotations.Mapper;
 
 import java.util.List;
-=======
+
 import org.apache.ibatis.annotations.Mapper;import java.util.List;
->>>>>>> origin/master
+
 
 /**
  * Author: lyh

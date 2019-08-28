@@ -47,11 +47,16 @@ public class UserService {
 
     }
 
+    /**
+     * 查询user信息
+     * @param user
+     * @return
+     */
     @Transactional(rollbackFor = Exception.class)
     public Map<String, String> userInfo(User user){
         map = new HashMap<>();
         //验证数据库是否存在
-        User user1 = userMapper.selectByUserId(user);
+        User user1 = userMapper.userInfoSelectByUserId(user);
         if (user1 != null){
             System.out.println(user1);
             map.put("name",user1.getRealname());
