@@ -1,11 +1,13 @@
 package cn.scpw.service;
 
-import cn.scpw.jsonbean.CodeBean;
 import cn.scpw.pojo.User;
 import cn.scpw.pojo.UserMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * @Author LJR
@@ -16,22 +18,25 @@ public class LoginService {
     @Autowired
     UserMapper userMapper;
 
-    @Autowired
-    CodeBean codeBean;
+
+
+    Map<String, String> map;
 
     @Transactional(rollbackFor = Exception.class)
-    public CodeBean isLogin(User user){
+    public Map<String, String> isLogin(User user){
+        map = new HashMap<>();
         if (userMapper.selectByUsernameAndPassword(user) != null){
 
-            codeBean.setCode("200");
-            codeBean.setMsg("登陆成功");
-            return codeBean;
+            map.put("code", "200");
+            map.put("msg", "登陆成功");
+            return map;
 
         }else {
 
-            codeBean.setCode("500");
-            codeBean.setMsg("登陆失败");
-            return codeBean;
+            map.put("code", "500");
+            map.put("msg", "登陆失败");
+            return map;
+
         }
 
     }
