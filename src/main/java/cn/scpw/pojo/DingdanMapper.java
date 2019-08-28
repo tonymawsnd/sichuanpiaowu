@@ -36,4 +36,11 @@ public interface DingdanMapper {
      * @return 用户订单对象集合
      */
     List<Dingdan> selectDingDanByUserIdAndPayState(String userId, String payState);
+
+    /**
+     * 通过订单ID去查询用户订单
+     * @param DingDanId 订单ID
+     * @return 订单对象
+     */
+    Dingdan selectDinDanByDinDanId(String DingDanId);
 }

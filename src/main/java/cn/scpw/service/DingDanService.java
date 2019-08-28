@@ -49,4 +49,13 @@ public class DingDanService {
     public List<Dingdan> selectDingDanByUserIdAndPayState(String userId, String payState) {
         return dingdanMapper.selectDingDanByUserIdAndPayState(userId, payState);
     }
+
+    /**
+     * 通过订单ID去查询订单
+     * @param DingDanId 订单ID
+     * @return 订单对象
+     */
+    public Dingdan selectDinDanByDinDanId(String DingDanId) {
+        return dingdanMapper.selectDinDanByDinDanId(DingDanId);
+    }
 }

@@ -45,5 +45,9 @@
         from dingdan d join checi c  on  d.checiId = c.id where  d.zhifuzhuangtai = #{param2}  and d.userId=#{param1}
     </select>
 
+    <select id="selectDinDanByDinDanId" resultMap="BaseResultMap">
+        select id, name, shenfenzheng, userphone, checiId, userId, beizhu, zhifuzhuangtai from dingdan where id+#{DingDanId}
+    </select>
+
 
 </mapper>
