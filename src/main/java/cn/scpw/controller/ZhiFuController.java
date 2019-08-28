@@ -27,13 +27,7 @@ public class ZhiFuController {
     @RequestMapping(value = "/isZhiFu", method = RequestMethod.POST, produces = {"application/json;charset=UTF-8"})
     @ResponseBody
     public Map isZhiFu(@RequestBody(required = false) Map<String,String> map){
-        return zhiFuService.isZhiFu(map);
+        return  zhiFuService.isZhiFu(map);
     }
 
-    public static void main(String[] args) {
-        Map<String, String> map = new HashMap<>();
-        map.put("dinDanid","1");
-        ZhiFuController zhiFuController = new ZhiFuController();
-        zhiFuController.isZhiFu(map);
-    }
 }

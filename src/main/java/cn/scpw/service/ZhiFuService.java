@@ -35,8 +35,11 @@ public class ZhiFuService {
             //select查询车票的信息和状态
             //完成支付
 
+            System.out.println(map.get("dinDanid"));
+            //解包前段给的map，得到订单的id，并用订单id的到订单对象
             Dingdan dingDan = dingdanMapper.selectDinDanByDinDanId(map.get("dinDanid"));
 
+            //用订单对象去调用AliPay,进行支付过程
             AliPayUtil aliPayUtil = new AliPayUtil();
             String form = aliPayUtil.aliPay(
                     "http://localhost:8080/success.html",
@@ -46,13 +49,27 @@ public class ZhiFuService {
                     dingDan.getCheci().getCheci(),
                     "火车票");
 
-
-
             Map<String, String> returnMap = new HashMap<>();
-            returnMap.put(form,form);
 
 
-            return returnMap;
+            //根据form情况返回map，如果支付成功，把form一并返回给前段
+            if (form != null){
+
+                User user = new User();
+
+
+                returnMap.put("form","form");
+                returnMap.put("code", "200");
+                returnMap.put("msg", "支付成功");
+                return returnMap;
+
+            }else {
+
+                returnMap.put("code", "500");
+                returnMap.put("msg", "支付失败");
+                return returnMap;
+
+            }
         }
 
 }
