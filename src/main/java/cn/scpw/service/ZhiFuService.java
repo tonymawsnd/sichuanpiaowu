@@ -42,7 +42,7 @@ public class ZhiFuService {
             //用订单对象去调用AliPay,进行支付过程
             AliPayUtil aliPayUtil = new AliPayUtil();
             String form = aliPayUtil.aliPay(
-                    "http://localhost:8080/success.html",
+                    "http://localhost:8080/paysuccess.html",
                     AliPayFiled.FAST_INSTANT_TRADE_PAY,
                     dingDan.getId(),
                     "1",
@@ -60,6 +60,7 @@ public class ZhiFuService {
                 returnMap.put("form","form");
                 returnMap.put("code", "200");
                 returnMap.put("msg", "支付成功");
+                returnMap.put("html",form);
                 return returnMap;
 
             }else {

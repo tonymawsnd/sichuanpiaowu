@@ -84,4 +84,12 @@ public class DingDanService {
                 , map.get("userId"), map.get("beizhu"));
 
     }
+
+    /**
+     * 通过订单ID去修改订单的支付状态
+     * @param id 订单ID
+     */
+    public void updateDingDanPayState(String id) {
+      dingdanMapper.updateDingDanPayState(id);
+    }
 }

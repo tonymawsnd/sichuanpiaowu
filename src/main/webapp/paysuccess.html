@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>支付成功</title>
+        <script src="js/jquery-3.4.1.min.js"></script>
+        <script>
+
+            function getUrlParam(name) {
+                var reg = new RegExp('(^|&)' + name + '=([^&]*)(&|$)', 'i');
+                var r = window.location.search.substr(1).match(reg);
+                if (r != null) {
+                    return unescape(r[2]);
+                }
+                return null;
+            }
+
+            function payStateUpdate() {
+
+               var out_trade_no = getUrlParam("out_trade_no");
+               console.log(out_trade_no);
+
+                $.ajax({
+                    url: "/updatePaySate",   // 请求路径  url-pattern  基于当前工程的绝对路径
+                    type: "post",            // 请求的方式，不区分大小写
+                    async: true,             // 是否异步，true是默认值，false为同步请求
+                    cache: false,            // 关闭缓存，目的是为了避免部分浏览器缓存加载出错(IE)
+                    datatype: "json",        // 返回类型，text文本、html页面、json数据
+                    contentType: "application/json;charset=utf-8",
+                    data: JSON.stringify({out_trade_no:out_trade_no}),
+                    success: function (data) {
+                        console.log(data);
+                    },
+                    error: function (data) {
+                    }
+                });
+
+            }
+            payStateUpdate()
+        </script>
+    </head>
+    <body>
+        <h1>
+            支付成功!!5S后跳转到主页面！
+        </h1>
+    </body>
+
+    <script>
+        setTimeout(function () {
+            window.location.href = "/userinfo.html"
+        },5000)
+    </script>
+</html>

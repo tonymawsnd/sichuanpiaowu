@@ -9,7 +9,6 @@ import org.apache.ibatis.annotations.Mapper;import java.util.List;
  * Date:  2019/8/28
  * Description:
  */
-@Mapper
 public interface DingdanMapper {
     /**
      * 向数据中进行数据订单数据查询，通过用户ID去查询自己所有的订单信息
@@ -57,8 +56,10 @@ public interface DingdanMapper {
     void insert(String id, String name, String shenfenzheng, String userphone, String checiId, String userId, String beizhu);
 
 
-
-
-
+    /**
+     * 修改订单支付状态码
+     * @param id 订单ID
+     */
+    void updateDingDanPayState(String id);
 
 }
