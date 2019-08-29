@@ -1,11 +1,13 @@
 package cn.scpw.service;
 
+import cn.scpw.pojo.CheciMapper;
 import cn.scpw.pojo.Dingdan;
 import cn.scpw.pojo.DingdanMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Map;
 
 /**
  * Author: lyh
@@ -20,6 +22,8 @@ public class DingDanService {
 
     @Autowired
     DingdanMapper dingdanMapper;
+    @Autowired
+    CheciMapper checiMapper;
 
     /**
      * 用户查询自己所有订单信息业务
@@ -51,11 +55,33 @@ public class DingDanService {
     }
 
     /**
-     * 通过订单ID去查询订单
-     * @param DingDanId 订单ID
-     * @return 订单对象
+     * 插入用户预定的车次信息
+     * @param map   前端的JSON
+     * @param CheCiId   车次的ID
      */
-    public Dingdan selectDinDanByDinDanId(String DingDanId) {
-        return dingdanMapper.selectDinDanByDinDanId(DingDanId);
+    public void insertCheCi(Map<String, String> map, String CheCiId) {
+        checiMapper.insert(CheCiId, map.get("checi"), map.get("leixing"), map.get("fazhan"), map.get("daozhan")
+                , map.get("fashi"), map.get("daoshi"), Long.parseLong(map.get("jiage")));
+
+
+    }
+    /**
+     * 插入用户预定的订单信息
+     * @param map   前端的JSON
+     * @param CheCiId 车次的ID
+     */
+    public void insertDingDan(Map<String, String> map, String CheCiId) {
+        String s = ""+System.currentTimeMillis();
+
+//        System.out.println(map.get("name"));
+//        System.out.println(map.get("shenfenzheng"));
+//        System.out.println(map.get("userphone"));
+//        System.out.println(map.get("userId"));
+//        System.out.println(map.get("beizhu"));
+//        System.out.println(s);
+
+        dingdanMapper.insert(s, map.get("name"), map.get("shenfenzheng"), map.get("userphone"), CheCiId
+                , map.get("userId"), map.get("beizhu"));
+
     }
 }

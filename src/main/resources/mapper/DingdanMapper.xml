@@ -46,8 +46,15 @@
     </select>
 
     <select id="selectDinDanByDinDanId" resultMap="BaseResultMap">
-        select id, name, shenfenzheng, userphone, checiId, userId, beizhu, zhifuzhuangtai from dingdan where id+#{DingDanId}
+        select id, name, shenfenzheng, userphone, checiId, userId, beizhu, zhifuzhuangtai from dingdan where id=#{DingDanId}
     </select>
+
+
+    <insert id="insert" parameterType="java.lang.String">
+        insert into dingdan(id, name, shenfenzheng, userphone, checiId, userId, beizhu) values
+         (#{arg0},#{arg1},#{arg2},#{arg3},#{arg4},#{arg5},#{arg6})
+    </insert>
+
 
 
 </mapper>
