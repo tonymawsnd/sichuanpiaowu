@@ -1,9 +1,6 @@
 package cn.scpw.pojo;
 
-import org.apache.ibatis.annotations.Mapper;
-
-import java.awt.*;
-import java.util.List;
+import org.apache.ibatis.annotations.Mapper;import java.util.List;
 
 /**
  * Author: lyh
@@ -12,7 +9,7 @@ import java.util.List;
  * Date:  2019/8/28
  * Description:
  */
-
+@Mapper
 public interface DingdanMapper {
     /**
      * 向数据中进行数据订单数据查询，通过用户ID去查询自己所有的订单信息
@@ -41,16 +38,26 @@ public interface DingdanMapper {
     List<Dingdan> selectDingDanByUserIdAndPayState(String userId, String payState);
 
     /**
-     * 插入用户的订单信息
-     * @param id
-     * @param name
-     * @param shenfenzheng
-     * @param userphone
-     * @param checiId
-     * @param userId
-     * @param beizhu
+     * 通过订单ID去查询用户订单
+     * @param DingDanId 订单ID
+     * @return 订单对象
+     */
+    Dingdan selectDinDanByDinDanId(String DingDanId);
+
+    /**
+     *
+     * @param id 用户ID
+     * @param name 用户名
+     * @param shenfenzheng 身份证
+     * @param userphone 用户电话
+     * @param checiId 车次ID
+     * @param userId 用户ID
+     * @param beizhu 备注
      */
     void insert(String id, String name, String shenfenzheng, String userphone, String checiId, String userId, String beizhu);
+
+
+
 
 
 
