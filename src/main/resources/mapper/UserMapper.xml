@@ -18,4 +18,19 @@
     update user set password= #{arg0} where id= #{arg1}
   </update>
 
+
+  <select id="userInfoSelectByUserId"  parameterType="cn.scpw.pojo.User" resultMap="BaseResultMap">
+    select username,password,jifen,realName,sex,userIdCard from user where id=#{id}
+
+  </select>
+
+  <select id="selectByUsername"  parameterType="cn.scpw.pojo.User" resultMap="BaseResultMap">
+    select id,username,password from user where username=#{username}
+
+  </select>
+
+  <insert id="insertByUser" parameterType="cn.scpw.pojo.User">
+    insert into user (id,username,password) values (#{id},#{username},#{password})
+  </insert>
+
 </mapper>
