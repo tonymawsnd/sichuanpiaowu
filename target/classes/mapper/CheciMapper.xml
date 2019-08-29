@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.scpw.pojo.CheciMapper">
+    <resultMap id="BaseResultMap" type="cn.scpw.pojo.Checi">
+        <!--@mbg.generated-->
+        <id column="id" property="id"/>
+        <result column="checi" property="checi"/>
+        <result column="leixing" property="leixing"/>
+        <result column="fazhan" property="fazhan"/>
+        <result column="daozhan" property="daozhan"/>
+        <result column="fashi" property="fashi"/>
+        <result column="daoshi" property="daoshi"/>
+        <result column="jiage" property="jiage"/>
+    </resultMap>
+    <sql id="Base_Column_List">
+        <!--@mbg.generated-->
+        id, checi, leixing, fazhan, daozhan, fashi, daoshi, jiage
+    </sql>
+</mapper>
